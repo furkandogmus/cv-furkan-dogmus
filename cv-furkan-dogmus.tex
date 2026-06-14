@@ -1,0 +1,128 @@
+% CV for Furkan Doğmuş — Oxford/AltaCV Style
+% Overleaf'te "Oxford" temalı moderncv ile derlenir
+% 1. Overleaf'te New Project → Upload Project
+% 2. Bu .tex dosyasını yükle
+% 3. Menu'den Compiler: XeLaTeX veya pdfLaTeX seç
+% 4. Recompile
+
+\documentclass[11pt,a4paper,sans]{moderncv}
+
+% Oxford stili
+\moderncvstyle{banking}
+\moderncvcolor{blue}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[scale=0.8]{geometry}
+
+% ─── Kişisel Bilgiler ─────────────────────────────────────────
+\name{Furkan}{Doğmuş}
+\title{DevOps Engineer}
+\phone[mobile]{+90 551 068 33 16}
+\email{furkandogmus9183@gmail.com}
+\social[linkedin]{furkandogmus}
+\social[github]{furkandogmus}
+\extrainfo{Ankara, Turkey}
+
+\quote{Cloud and DevOps-focused engineer with 2 years of experience in CI/CD automation, monitoring, Kubernetes, and backup/disaster recovery. Passionate about cloud-native infrastructure, GitOps, observability, and platform engineering.}
+
+\begin{document}
+
+\makecvtitle
+
+% ─── Deneyim ──────────────────────────────────────────────────
+\section{Experience}
+
+\cventry{May 2024 -- May 2026}
+{DevOps / Backend Engineer}
+{BTS Group -- ODTÜ Teknokent}
+{Ankara, Turkey}
+{}{
+\begin{itemize}
+    \item Integrated enterprise backup and disaster recovery solutions using NetBackup and Commvault.
+    \item Implemented full VM recovery, cross-host restoration, disk recovery, and provisioning from backup images.
+    \item Reduced deployment time from 30 to 10 minutes by automating RPM builds via GitLab CI pipelines.
+    \item Built 3+ Grafana dashboards for CPU, memory, disk I/O, network, and container metrics.
+    \item Collected infrastructure metrics with Prometheus, libvirt exporter, and node/container exporters.
+    \item Designed centralized logging with ELK Stack and Filebeat for application log aggregation.
+\end{itemize}
+}
+
+% ─── Projeler ─────────────────────────────────────────────────
+\section{Projects}
+
+\cventry{2025 -- Present}
+{BotForge --- Multi-tenant RAG Chatbot Platform}
+{\href{https://botforge.bagajpark.com}{botforge.bagajpark.com}}
+{}{}
+{
+\begin{itemize}
+    \item Multi-tenant AI chatbot platform with document-based RAG, authentication, subscription, and analytics.
+    \item Vector search via PostgreSQL + pgvector, containerized CI/CD with Docker and K3d.
+    \item \textbf{Stack:} Java, Spring Boot, PostgreSQL, pgvector, Docker, K3d
+\end{itemize}
+}
+
+\cventry{2025}
+{BagajPark --- Luggage Storage Marketplace}
+{\href{https://bagajpark.com}{bagajpark.com}}
+{}{}
+{
+\begin{itemize}
+    \item Full-stack marketplace with role-based auth, QR tracking, and payment integration.
+    \item Automated CI/CD deployment pipelines.
+    \item \textbf{Stack:} Next.js, PostgreSQL, Redis, Docker
+\end{itemize}
+}
+
+\cventry{2026 -- Present}
+{RAG Operator for Kubernetes (Ongoing)}
+{}{}{}
+{
+\begin{itemize}
+    \item Kubernetes-native operator for declarative RAG ingestion, embedding, and vector indexing.
+    \item Uses controller-runtime pattern with CRDs.
+    \item \textbf{Stack:} Go, Kubernetes, controller-runtime
+\end{itemize}
+}
+
+% ─── Eğitim ───────────────────────────────────────────────────
+\section{Education}
+
+\cventry{Sep 2021 -- Jan 2026}
+{B.Sc. in Computer Engineering}
+{Hacettepe University}
+{Ankara, Turkey}
+{}
+{}
+
+% ─── Yetenekler ───────────────────────────────────────────────
+\section{Technical Skills}
+
+\cvitem{Cloud \& DevOps}{
+Docker, Kubernetes, GitLab CI/CD, Helm, Rocky Linux, Prometheus, Grafana, ELK Stack, Filebeat, NetBackup, Commvault
+}
+\cvitem{Programming}{
+Go, Java, Python, JavaScript, TypeScript, Bash
+}
+\cvitem{Infrastructure}{
+PostgreSQL, Redis, NFS, Ceph, libvirt/KVM, pgvector
+}
+\cvitem{Platforms}{
+Linux (Rocky, Ubuntu), Git, GitHub, GitLab, Jira
+}
+
+% ─── Diller ───────────────────────────────────────────────────
+\section{Languages}
+
+\cvitemwithcomment{Turkish}{Native}{}
+\cvitemwithcomment{English}{Professional Working Proficiency (B2)}{}
+
+% ─── Sertifikalar ─────────────────────────────────────────────
+\section{Certifications (In Progress)}
+
+\cventry{Planned}{CKA --- Certified Kubernetes Administrator}{}{}{}{}
+\cventry{Planned}{CKAD --- Certified Kubernetes Application Developer}{}{}{}{}
+\cventry{Planned}{CKS --- Certified Kubernetes Security Specialist}{}{}{}{}
+
+\end{document}
